@@ -1,23 +1,9 @@
 "use client";
-import { Box, Image, Flex, Heading } from "@chakra-ui/react";
+import { Box, Image, Flex, Text } from "@chakra-ui/react";
 import taxiPhoto from "@/public/NewTaxiPoint.png";
 export function TaxiImage() {
   return (
     <Flex flexDir="column" justifyContent="center" alignItems="center" h="100%">
-      <Box
-        display="flex"
-        flexDir="column"
-        justifyContent="center"
-        alignItems="center"
-        my={10}
-        mt={[20, 20, 10, 10]}
-        mb={[0, 0, 10, 10]}
-      >
-        <Heading size="xl" mb={4}>
-          Rodrigo da Silva
-        </Heading>
-      </Box>
-
       <Box
         display="flex"
         flexDirection="row"
@@ -25,6 +11,20 @@ export function TaxiImage() {
         w={["80%", "80%", "100%", "100%"]}
       >
         <Image src={taxiPhoto.src} />
+      </Box>
+
+      <Box
+        display="flex"
+        flexDir="column"
+        justifyContent="center"
+        alignItems="center"
+        my={4}
+        mt={[0, 0, 4, 4]}
+      >
+        <Text>
+          "Se o lugar não permitir acesso a todas as pessoas, esse lugar é
+          deficiente."
+        </Text>
       </Box>
     </Flex>
   );

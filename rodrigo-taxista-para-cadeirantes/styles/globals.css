@@ -10,7 +10,7 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
-    --background-smooth-blue: #d8e9ff;
+    --background-smooth-blue: #d8e9ff00;
 
     --primary-glow: conic-gradient(from 180deg at 50% 50%,
             #16abff33 0deg,
@@ -65,14 +65,22 @@ a {
     text-decoration: none;
 }
 
+.header-image {
+    margin-left: 20px;
+}
+
+.footer {
+    padding-block: 20px;
+}
+
 @media (max-width: 430px) {
     .header {
         flex-direction: column;
-        justify-content: space-around;
     }
 
-    .header .logo {
+    .header-image {
         margin-top: 20px;
+        margin-left: 0px;
     }
 
     .footer {

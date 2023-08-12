@@ -1,5 +1,5 @@
 "use client";
-import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import { Header } from "@/components/Header/page";
 import { Contact } from "@/components/Contact/page";
 import { TaxiImage } from "@/components/TaxiImage/page";
@@ -40,9 +40,10 @@ export default function Home() {
             flexDir="row"
             justifyContent="center"
             alignItems="center"
+            w="100%"
             h="100%"
           >
-            Todos os direitos reservados
+            <Text color="#848ba0">Todos os direitos reservados®</Text>
           </Box>
         </GridItem>
       </Grid>

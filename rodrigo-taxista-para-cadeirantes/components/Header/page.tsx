@@ -1,19 +1,37 @@
 "use client";
-import { Box, Flex, Text, Image, Stack } from "@chakra-ui/react";
-import Title from "@/public/TaxiTitle.png";
-import Logo from "@/public/Logo.png";
+import { Box, Flex, Text, Image, Heading } from "@chakra-ui/react";
+import MainLogo from "@/public/MainLogo.png";
 
 export function Header() {
   return (
     <Flex
       h="100%"
       alignItems={"center"}
-      justifyContent={"space-between"}
-      p={6}
+      justifyContent={"center"}
+      py={12}
       className="header"
     >
-      <Image w="300px" src={Title.src} />
-      <Image w="80px" borderRadius="20px" src={Logo.src} className="logo" />
+      <Box textAlign="center">
+        <Heading
+          textTransform="uppercase"
+          fontSize={["2xl", "2xl", "3xl", "3xl"]}
+        >
+          Transporte Adaptado
+        </Heading>
+        <Heading
+          textTransform="uppercase"
+          fontSize={["2xl", "2xl", "3xl", "3xl"]}
+          color="#0a319d"
+        >
+          Para Cadeirantes
+        </Heading>
+        <Text color="#566675">Comodidade e segurança</Text>
+      </Box>
+      <Image
+        w={["70px", "80px", "90px", "90px"]}
+        src={MainLogo.src}
+        className="header-image"
+      />
     </Flex>
   );
 }
