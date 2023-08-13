@@ -1,7 +1,7 @@
 "use client";
 import { Box, Image, Flex, Text } from "@chakra-ui/react";
 import taxiPhoto from "@/public/NewTaxiPoint.png";
-export function TaxiImage() {
+export function Drawing() {
   return (
     <Flex flexDir="column" justifyContent="center" alignItems="center" h="100%">
       <Box

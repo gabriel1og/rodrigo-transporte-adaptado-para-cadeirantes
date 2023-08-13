@@ -2,7 +2,7 @@
 import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import { Header } from "@/components/Header/page";
 import { Contact } from "@/components/Contact/page";
-import { TaxiImage } from "@/components/TaxiImage/page";
+import { Drawing } from "@/components/Drawing/page";
 import { MainGridITem } from "@/components/Generics/MainGridItem";
 export default function Home() {
   return (
@@ -31,9 +31,10 @@ export default function Home() {
             textAlign="center"
           >
             <MainGridITem children={<Contact />} />
-            <MainGridITem children={<TaxiImage />} />
+            <MainGridITem children={<Drawing />} />
           </Grid>
         </GridItem>
+
         <GridItem area={"footer"} className="footer">
           <Box
             display="flex"
