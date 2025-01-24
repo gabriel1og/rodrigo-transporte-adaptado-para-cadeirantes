@@ -6,7 +6,7 @@ import { BsWhatsapp } from "react-icons/bs";
 export function Links() {
   return (
     <Box py={12}>
-      <Link href="https://api.whatsapp.com/send/?phone=5531995622051&text&type=phone_number&app_absent=0">
+      <Link href="https://api.whatsapp.com/send/?phone=5531999999999&text&type=phone_number&app_absent=0">
         <Badge
           colorScheme="green"
           display="flex"
