@@ -1,5 +1,5 @@
 "use client";
-import { Box, Text, Heading, List } from "@chakra-ui/react";
+import { Box, Text, Heading, List, VStack } from "@chakra-ui/react";
 import { MainListItem } from "../Generics/MainListItem";
 
 export function Infos() {
@@ -11,7 +11,7 @@ export function Infos() {
       alignItems="center"
       my={4}
     >
-      <Heading fontWeight={600} fontSize="4xl">
+      <VStack fontWeight={600} fontSize="4xl" gap={0}>
         <Text
           position="relative"
           _after={{
@@ -30,10 +30,10 @@ export function Infos() {
         >
           Entre em contato
         </Text>
-        <Heading color="#79a6d6" size={["xl", "xl", "lg", "xl"]} mt={4}>
+        <Heading color="#79a6d6" size={["xl", "xl", "lg", "xl"]} mt={2}>
           Rodrigo
         </Heading>
-      </Heading>
+      </VStack>
       <List py={12} spacing={4}>
         <MainListItem text="Atendimento especializado" />
         <MainListItem text="Solicitação do serviço mediante agendamento prévio" />
