@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Playfair_Display } from "next/font/google";
 import { Metadata } from "next";
 import { Provider } from "../components/ui/provider";
 
@@ -10,13 +10,21 @@ const montserrat = Montserrat({
   preload: true,
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
+  style: ["normal", "italic"],
+  preload: true,
+});
+
 export const metadata: Metadata = {
   title: "Rodrigo - Transporte adaptado para cadeirantes",
   description: "Taxi destinado à cadeirantes",
   creator: "Rodrigo",
   applicationName: "Rodrigo - Transporte adaptado para cadeirantes",
   keywords:
-    "Taxi, Cadeirantes, Transporte Adaptado, Belo Horizonte, Rodrigo, Taxista, Acessibilidade, Acessível, Taxi para Cadeirantes",
+    "Taxi, Cadeirantes, Transporte Adaptado, Belo Horizonte, Rodrigo, Taxista, Acessibilidade, Acessível, Taxi para Cadeirantes, Transporte de pessoas com mobilidade reduzida",
   icons: {
     icon: "/favicon.ico",
   },
@@ -31,7 +39,7 @@ export const metadata: Metadata = {
         url: "/open-graph.png",
         width: 1200,
         height: 630,
-        alt: "4pay by Seidor",
+        alt: "Rodrigo - Transporte adaptado para cadeirantes",
       },
     ],
   },
@@ -84,7 +92,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="pt-BR"
-      className={montserrat.className}
+      className={`${montserrat.className} ${playfair.variable}`}
     >
       <body>
         <Provider>{children}</Provider>
