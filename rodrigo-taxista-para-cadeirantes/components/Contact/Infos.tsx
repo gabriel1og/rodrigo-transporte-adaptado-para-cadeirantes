@@ -34,10 +34,11 @@ export function Infos() {
           Rodrigo
         </Heading>
       </VStack>
-      <List py={12} spacing={4}>
+      <VStack py={12} gap={4}>
         <MainListItem text="Atendimento especializado" />
         <MainListItem text="Solicitação do serviço mediante agendamento prévio" />
-      </List>
+        <MainListItem text="Aceitamos Cartão e PIX" />
+      </VStack>
     </Box>
   );
 }
